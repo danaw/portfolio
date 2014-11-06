@@ -7,16 +7,18 @@
 get_header();  ?>
 
 <div class="hero">
-<div class="container vertical-centering">
+<div class="container-hero vertical-centering">
   <h1>Hi, I'm Dana</h1>
   <h2>I'm a Front-End Developer with a background in Graphic Design and Communication Studies</h2>
 </div> <!-- .container -->
 </div> <!-- .hero -->
 
 <div class="about">
-  <h3>General Overview</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam animi, recusandae inventore aliquam fugiat neque commodi autem mollitia officia, nemo dolorem, sit quas iure magni sint sed alias dignissimos. Excepturi.</p>
-</div>
+  <div class="container">
+    <h3>General Overview</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam animi, recusandae inventore aliquam fugiat neque commodi autem mollitia officia, nemo dolorem, sit quas iure magni sint sed alias  dignissimos. Excepturi.</p>
+  </div> <!-- .container -->
+</div> <!-- .about -->
 
 <div class="main">
   <div class="container">

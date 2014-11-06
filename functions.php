@@ -266,3 +266,8 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+/**
+ * Remove the front-end admin bar for everybody, always
+ */
+show_admin_bar( false );

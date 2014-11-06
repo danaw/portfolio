@@ -1,0 +1,52 @@
+header {
+	position: relative;
+  position: fixed;
+	background: #FFF;
+	width: 100%;
+	height: 60px;
+	z-index: 999;
+}
+
+#menu-header-menu {
+	padding-right: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	li a {
+		width: 90px;
+		padding-top: 20px;
+    background: #00C6C6;
+	  height: 60px;
+	  text-align: center;
+	  transition: 0.5s;
+	  &:hover {
+	  	background: #FFF;
+	  	color: #888;
+	  }
+	}
+}
+
+ul.menu {
+	  float: right;
+    margin: 0;
+    padding: 0;
+  }
+    ul.menu li {
+      display: inline;
+      padding: 0 10px;
+    }
+
+      ul.menu li a:link,
+      ul.menu li a:visited {
+        color: #FFF;
+        padding: 10px;
+      }
+
+.logo {
+	padding-top: 12px;
+}
+
+.logo a {
+	float: left;
+	font-size: 18px;
+ }

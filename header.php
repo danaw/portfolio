@@ -17,12 +17,11 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
+  <div class="logo">
+    <div class="container">
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home"><?php echo do_shortcode('[site_logo]'); ?>
+        </a>
+    </div> <!-- .logo -->
 
     <?php wp_nav_menu( array(
       'container' => false,

@@ -66,8 +66,23 @@
   z-index: 999;
 }
 
+.overview {
+	float: left;
+	width: 55%;
+	margin: 1%;
+}
+
+.overview-img {
+	float: left;
+	width: 35%;
+	margin: 1.5%;
+} .circle {
+	border-radius: 50%;
+}
+
 .portfolio {
   background: #EEE;
+  padding: 50px;
 h2 {
   color: #FF6699;
  }

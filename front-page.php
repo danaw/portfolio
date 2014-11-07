@@ -19,8 +19,8 @@ get_header();  ?>
 <div class="about">
   <div class="container">
 
-    <div class="overview">
-      <img src="" alt="This is where the image will go">
+    <div class="overview-img">
+      <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/dana.jpg" alt="Dana Werpny">
     </div> <!-- .overview -->
 
     <div class="overview">
@@ -30,6 +30,23 @@ get_header();  ?>
 
   </div> <!-- .container -->
 </div> <!-- .about -->
+
+<div class="portfolio">
+  <div class="container">
+    <h2>Portfolio</h2>
+    <img src="" alt="portfolio1">
+    <img src="" alt="portfolio2">
+    <img src="" alt="portfolio3">
+    <img src="" alt="portfolio4">
+  </div> <!-- .container -->
+</div> <!-- .portfolio -->
+
+<div class="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <p>I got skills, they're multiplying. And I'm losing control.</p>
+  </div> <!-- .container -->
+</div> <!-- .skills -->
 
 <div class="main">
   <div class="container">
@@ -43,5 +60,12 @@ get_header();  ?>
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
 </div> <!-- /.main -->
+
+<div class="contact">
+<div class="container">
+  <h2>Say Hello</h2>
+  <p>Please direct all inquiries to hello@danawerpny.com or fill out the form below. I will respond within 24 hours (or 1 business day), usually much sooner.</p>
+  </div> <!-- .container -->
+</div> <!-- .contact -->
 
 <?php get_footer(); ?>

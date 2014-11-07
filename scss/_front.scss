@@ -1,3 +1,7 @@
+// .body {
+// 	position: fixed;
+// }
+
 .container hero {
 	margin: 0 auto;
 	width: 70%;
@@ -31,6 +35,23 @@
   }
 }
 
+.action {
+	margin-top: 5%;
+	background: #E22962;
+	border: 1.5px solid #E22962;
+	border-radius: 5px;
+	padding: 12px 18px;
+	transition: 0.2s ease-in-out;
+} a:link, a:visited {
+  color: #FFF;
+ }
+
+ .action:hover,
+ .action:visited {
+ 	border: 1.5px solid #FFF;
+ }
+
+
 .vertical-centering {
     position: absolute;
     top: 50%;
@@ -40,7 +61,6 @@
 
 .about {
   background: #EEE;
-  width: 100%;
   height: 400px;
   padding: 50px;
   z-index: 999;

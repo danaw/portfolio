@@ -10,13 +10,24 @@ get_header();  ?>
 <div class="container-hero vertical-centering">
   <h1>Hi, I'm Dana</h1>
   <h2>I'm a Front-End Developer with a background in Graphic Design and Communication Studies</h2>
+  <button class="action"><a href="">View My Portfolio</a></button>
+  <button class="action"><a href="">Download My CV</a></button>
+  <button class="action"><a href="">Contact Me</a></button>
 </div> <!-- .container -->
 </div> <!-- .hero -->
 
 <div class="about">
   <div class="container">
-    <h3>General Overview</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam animi, recusandae inventore aliquam fugiat neque commodi autem mollitia officia, nemo dolorem, sit quas iure magni sint sed alias  dignissimos. Excepturi.</p>
+
+    <div class="overview">
+      <img src="" alt="This is where the image will go">
+    </div> <!-- .overview -->
+
+    <div class="overview">
+      <h3>General Overview</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam animi, recusandae inventore aliquam fugiat neque commodi autem mollitia officia, nemo dolorem, sit quas iure magni sint sed alias  dignissimos. Excepturi.</p>
+    </div> <!-- .overview -->
+
   </div> <!-- .container -->
 </div> <!-- .about -->
 

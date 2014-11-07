@@ -31,35 +31,68 @@ get_header();  ?>
   </div> <!-- .container -->
 </div> <!-- .about -->
 
-<div class="portfolio">
+<div class="portfolio clearfix">
   <div class="container">
     <h2>Portfolio</h2>
-    <img src="" alt="portfolio1">
-    <img src="" alt="portfolio2">
-    <img src="" alt="portfolio3">
-    <img src="" alt="portfolio4">
+
+      <div class="portfolio-right">
+        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio4.jpg" alt="Dana Werpny">
+      </div> <!-- .portfolio-display -->
+
+      <div class="portfolio-left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam odit velit dolore obcaecati cupiditate quaerat ab inventore dolores maiores, voluptas, voluptates enim, harum nemo ipsa repudiandae a temporibus quis tempore.</p>
+      </div> <!-- .portfolio-img -->
+
   </div> <!-- .container -->
 </div> <!-- .portfolio -->
 
 <div class="skills">
   <div class="container">
-    <h2>Skills</h2>
-    <p>I got skills, they're multiplying. And I'm losing control.</p>
+    <!-- <h2>Skills</h2> -->
+    <div class="skills-list">
+      <i class="fa fa-code fa-5x"></i>
+      <h2>Development</h2>
+      <p>HTML5, CSS3, Sass</p>
+      <p>Javascript Fundamentals, JQuery</p>
+      <p>AJAX API Integration</p>
+      <p>WordPress, PHP</p>
+    </div> <!-- .skills-list -->
+    <div class="skills-list">
+      <i class="fa fa-paint-brush fa-5x"></i>
+      <h2>Design</h2>
+      <p>Illustrator</p>
+      <p>Photoshop</p>
+      <p>InDesign</p>
+    </div> <!-- .skills-list -->
+    <div class="skills-list">
+      <i class="fa fa-cog fa-5x"></i>
+      <h2>Workflow</h2>
+      <p>Sublime Text 3</p>
+      <p>Gulp</p>
+      <p>Git Hub</p>
+      <p>Cross-Browser Testing</p>
+    </div> <!-- .skills-list -->
+    <div class="skills-list">
+      <i class="fa fa-heart fa-5x"></i>
+      <h2>Passion</h2>
+      <p>I enjoy building electronic landscapes. I am always working towards proficiency - learning to be better than I was the day before.</p>
+    </div> <!-- .skills-list -->
   </div> <!-- .container -->
 </div> <!-- .skills -->
 
-<div class="main">
-  <div class="container">
+<div class="reading">
+  <div class="main">
+    <div class="container">
+      <?php // Start the loop ?>
+      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-    <?php // Start the loop ?>
-    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        <h2><?php the_title(); ?></h2>
+        <?php the_content(); ?>
 
-      <h2><?php the_title(); ?></h2>
-      <?php the_content(); ?>
-
-    <?php endwhile; // end the loop?>
+      <?php endwhile; // end the loop?>
+    </div> <!-- /.main -->
   </div> <!-- /.container -->
-</div> <!-- /.main -->
+</div> <!-- .reading -->
 
 <div class="contact">
 <div class="container">

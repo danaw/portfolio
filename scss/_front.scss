@@ -10,8 +10,10 @@
 
 .hero {
   background: #00C6C6;
-  // background:url('images/hero.jpg');
+  background:url('img/hero1.png');
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,8 +39,8 @@
 
 .action {
 	margin-top: 5%;
-	background: #E22962;
-	border: 1.5px solid #E22962;
+	background: #FF4373;
+	border: 1.5px solid #FF4373;
 	border-radius: 5px;
 	padding: 12px 18px;
 	transition: 0.2s ease-in-out;
@@ -60,30 +62,72 @@
 }
 
 .about {
-  background: #EEE;
+  background: #CCC;
   height: 400px;
   padding: 50px;
   z-index: 999;
 }
 
 .overview {
-	float: left;
+	display: inline-block;
 	width: 55%;
 	margin: 1%;
+	vertical-align: top;
 }
 
 .overview-img {
-	float: left;
+	display: inline-block;
 	width: 35%;
 	margin: 1.5%;
 } .circle {
-	border-radius: 50%;
+	// border-radius: 50%;
+	border: 10px solid #FFF;
 }
 
 .portfolio {
-  background: #EEE;
+  background: #FF6699;
   padding: 50px;
+  .portfolio-left {
+  	float: left;
+  	width: 45%;
+  	margin-right: 1%;
+  }
+  .portfolio-right {
+  	float: right;
+  	display: inline-block;
+  	width: 50%;
+  	margin-left: 1%;
+  }
 h2 {
   color: #FF6699;
  }
+}
+
+.skills {
+	background-color: transparent;
+	color: #FFF;
+	padding: 50px;
+	text-align: center;
+}
+
+.skills-list {
+	display: inline-block;
+	width: 24.5%;
+	vertical-align: top;
+	text-align: center;
+	p {
+		color: #666;
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
+h2 {
+	color: #666;
+ }
+}
+
+.reading {
+	clear: both;
+	background: #EEE;
+	width: 100%;
+	padding: 50px;
 }

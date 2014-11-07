@@ -17,6 +17,7 @@ header {
 		padding-top: 0px;
 		color: #888;
     background: #FFF;
+    line-height: 50px;
 	  height: 0;
 	  text-align: center;
 	  overflow-y: hidden;
@@ -25,7 +26,7 @@ header {
 	  transition-duration: .5s;
 	  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 	  &:hover {
-	  	background: #00C6C6;
+	  	background: #43B6CD;
 	  	color: #FFF;
 	  	height: 60px;
 	  }

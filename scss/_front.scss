@@ -57,9 +57,12 @@
 // SCROLL INDICATOR
 
 .scroll-indicator {
-	position: absolute;
-	top: 100vh - 50;
-	left: 50%;
+  	animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .vertical-centering {

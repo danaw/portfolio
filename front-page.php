@@ -13,6 +13,9 @@ get_header();  ?>
   <a href="#portfolio"><button class="action">View My Portfolio</button></a>
   <a href=""><button class="action">Download My CV</button></a>
   <a href="#contact"><button class="action">Contact Me</button></a>
+  <div class="scroll-indicator">
+    <a href="#about"><i class="fa fa-angle-down fa-5x"></i></a>
+  </div> <!-- .scroll-indicator -->
 </div> <!-- .container -->
 </div> <!-- .hero -->
 

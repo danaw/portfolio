@@ -21,7 +21,7 @@
   <div class="logo">
     <div class="container">
         <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <img src="<?php bloginfo('template_directory'); ?>/img/logo2.svg" alt="Dana Werpny">
+        <?php echo wp_get_attachment_link( 34, small ); ?>
         </a>
     </div> <!-- .logo -->
 
@@ -30,11 +30,11 @@
       'theme_locations' => 'primary'
     )); ?>
 
-    <div class="social">
+    <!-- <div class="social">
      <i class="fa fa-twitter"></i>
      <i class="fa fa-github"></i>
      <i class="fa fa-linkedin"></i>
-    </div>
+    </div> -->
 
   </div> <!-- /.container -->
 </header><!--/.header-->

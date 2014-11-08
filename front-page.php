@@ -37,7 +37,7 @@ get_header();  ?>
 <div class="portfolio clearfix" id="portfolio">
   <div class="container">
     <h2>Portfolio</h2>
-
+     <div class="line"></div>
       <div class="portfolio-right">
         <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio4.jpg" alt="Dana Werpny">
       </div> <!-- .portfolio-display -->
@@ -61,7 +61,7 @@ get_header();  ?>
   <div class="container">
     <!-- <h2>Skills</h2> -->
     <div class="skills-list">
-      <i class="fa fa-code fa-5x"></i>
+      <i class="fa fa-code fa-4x"></i>
       <h2>Development</h2>
       <p>HTML5, CSS3, Sass</p>
       <p>Javascript Fundamentals, JQuery</p>
@@ -69,14 +69,14 @@ get_header();  ?>
       <p>WordPress, PHP</p>
     </div> <!-- .skills-list -->
     <div class="skills-list">
-      <i class="fa fa-paint-brush fa-5x"></i>
+      <i class="fa fa-paint-brush fa-4x"></i>
       <h2>Design</h2>
       <p>Illustrator</p>
       <p>Photoshop</p>
       <p>InDesign</p>
     </div> <!-- .skills-list -->
     <div class="skills-list">
-      <i class="fa fa-cog fa-5x"></i>
+      <i class="fa fa-cog fa-4x"></i>
       <h2>Workflow</h2>
       <p>Sublime Text 3</p>
       <p>Gulp</p>
@@ -84,7 +84,7 @@ get_header();  ?>
       <p>Cross-Browser Testing</p>
     </div> <!-- .skills-list -->
     <div class="skills-list">
-      <i class="fa fa-heart fa-5x"></i>
+      <i class="fa fa-heart fa-4x"></i>
       <h2>Passion</h2>
       <p>I enjoy building electronic landscapes. I am always working towards proficiency - learning to be better than I was the day before.</p>
     </div> <!-- .skills-list -->

@@ -20,7 +20,8 @@
 <header>
   <div class="logo">
     <div class="container">
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home"><?php echo do_shortcode('[site_logo]'); ?>
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+        <img src="<?php bloginfo('template_directory'); ?>/img/logo2.svg" alt="Dana Werpny">
         </a>
     </div> <!-- .logo -->
 
@@ -28,6 +29,13 @@
       'container' => false,
       'theme_locations' => 'primary'
     )); ?>
+
+    <div class="social">
+     <i class="fa fa-twitter"></i>
+     <i class="fa fa-github"></i>
+     <i class="fa fa-linkedin"></i>
+    </div>
+
   </div> <!-- /.container -->
 </header><!--/.header-->
 

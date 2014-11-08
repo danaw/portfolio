@@ -11,11 +11,13 @@ header {
 	padding-right: 5px;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 13%;
 	li a {
 		width: 90px;
-		padding-top: 0px;
+		padding-top: 20px;
     background: none;
+    color: #888;
+    font-size: 16px;
 	  height: 60px;
 	  text-align: center;
 	  transition: 0.5s;
@@ -27,16 +29,19 @@ header {
     position: relative;
 	  &:hover {
 	  	// background: #FFF;
-	  	color: #888;
+	  	color: #FFF;
 	  	&:after {
 	  		top:0;
 	  	}
 	  }
 	  &:after {
-	  	transition: all 0.2s;
+	  	-webkit-transition: all linear 200ms;
+      -moz-transition: all linear 200ms;
+      -o-transition: all linear 200ms;
+      transition: all linear 200ms;
 			content : '';
 			display: block;
-			background:red;
+			background: #43B6CD;
 			position: absolute;
 			width: 100px;
 			top: 100%;
@@ -72,3 +77,15 @@ ul.menu {
 	float: left;
 	font-size: 18px;
  }
+
+.social {
+	float: right;
+	position: absolute;
+	top: 17.5px;
+  right: 15%;
+ .fa {
+ 	padding: 0 5px;
+ 	color: #AAA;
+ 	font-size: 1.5em;
+ }
+}

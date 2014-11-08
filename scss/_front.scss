@@ -9,7 +9,7 @@
 }
 
 .hero {
-  background: #00C6C6;
+  background: #43B6CD;
   background:url('img/hero1.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,9 +37,17 @@
   }
 }
 
+.line {
+	color: red;
+	width: 30%;
+	height: 5px;
+	padding: 25px;
+}
+
 .action {
 	margin-top: 5%;
 	background: #FF4373;
+	color: #FFF;
 	border: 1.5px solid #FF4373;
 	border-radius: 5px;
 	padding: 12px 18px;
@@ -62,7 +70,7 @@
 }
 
 .about {
-  background: #CCC;
+  background: #EEE;
   height: 400px;
   padding: 50px;
   z-index: 999;
@@ -87,19 +95,25 @@
 .portfolio {
   background: #FFF;
   padding: 50px;
+  h2 {
+  	color: #43B6CD;
+  	text-align: center;
+  }
   .portfolio-left {
   	float: left;
   	width: 45%;
+  	height: 400px;
   	margin-right: 1%;
   }
   .portfolio-right {
   	float: right;
   	display: inline-block;
   	width: 50%;
+  	height: 400px;
   	margin-left: 1%;
   }
 h2 {
-  color: #FF6699;
+  color: #43B6CD;
  }
 }
 
@@ -130,4 +144,35 @@ h2 {
 	background: #EEE;
 	width: 100%;
 	padding: 50px;
+}
+
+.contact {
+	background: #FFF;
+	padding: 50px;
+	p {
+		font-size: 0.9em;
+		text-align: left;
+	}
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		color: #FF4373;
+		text-align: left;
+	}
+}
+
+.contact-left {
+	float: left;
+	width: 50%;
+}
+
+.contact-right {
+	float: right;
+	width: 50%;
+}
+
+footer p {
+		color: #FFF;
+		font-weight: 300;
 }

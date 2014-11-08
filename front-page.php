@@ -10,13 +10,13 @@ get_header();  ?>
 <div class="container-hero vertical-centering">
   <h1>Hi, I'm Dana</h1>
   <h2>I'm a Front-End Developer with a background in Graphic Design and Communication Studies</h2>
-  <button class="action"><a href="">View My Portfolio</a></button>
-  <button class="action"><a href="">Download My CV</a></button>
-  <button class="action"><a href="">Contact Me</a></button>
+  <a href="#portfolio"><button class="action">View My Portfolio</button></a>
+  <a href=""><button class="action">Download My CV</button></a>
+  <a href="#contact"><button class="action">Contact Me</button></a>
 </div> <!-- .container -->
 </div> <!-- .hero -->
 
-<div class="about">
+<div class="about" id="about">
   <div class="container">
 
     <div class="overview-img">
@@ -31,7 +31,7 @@ get_header();  ?>
   </div> <!-- .container -->
 </div> <!-- .about -->
 
-<div class="portfolio clearfix">
+<div class="portfolio clearfix" id="portfolio">
   <div class="container">
     <h2>Portfolio</h2>
 
@@ -43,10 +43,18 @@ get_header();  ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam odit velit dolore obcaecati cupiditate quaerat ab inventore dolores maiores, voluptas, voluptates enim, harum nemo ipsa repudiandae a temporibus quis tempore.</p>
       </div> <!-- .portfolio-img -->
 
+      <div class="portfolio-left">
+        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio4.jpg" alt="Dana Werpny">
+      </div> <!-- .portfolio-display -->
+
+      <div class="portfolio-right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam odit velit dolore obcaecati cupiditate quaerat ab inventore dolores maiores, voluptas, voluptates enim, harum nemo ipsa repudiandae a temporibus quis tempore.</p>
+      </div> <!-- .portfolio-img -->
+
   </div> <!-- .container -->
 </div> <!-- .portfolio -->
 
-<div class="skills">
+<div class="skills" id="skills">
   <div class="container">
     <!-- <h2>Skills</h2> -->
     <div class="skills-list">
@@ -80,7 +88,7 @@ get_header();  ?>
   </div> <!-- .container -->
 </div> <!-- .skills -->
 
-<div class="reading">
+<div class="reading" id="blog">
   <div class="main">
     <div class="container">
       <?php // Start the loop ?>
@@ -94,10 +102,20 @@ get_header();  ?>
   </div> <!-- /.container -->
 </div> <!-- .reading -->
 
-<div class="contact">
+<div class="contact clearfix" id="contact">
 <div class="container">
-  <h2>Say Hello</h2>
-  <p>Please direct all inquiries to hello@danawerpny.com or fill out the form below. I will respond within 24 hours (or 1 business day), usually much sooner.</p>
+  <h1>Say Hello</h1>
+  <div class="line"></div>
+  <div class="contact-left">
+    <h2>Connect with me on social media.</h2>
+    <p><i class="fa fa-envelope fa-2x"></i> &nbsp; hello@danawerpny.com</p>
+    <p><i class="fa fa-twitter fa-2x"></i> &nbsp; @danawerpny</p>
+    <p><i class="fa fa-github fa-2x"></i> &nbsp; github.com/danaw</p>
+    <p><i class="fa fa-linkedin fa-2x"></i> &nbsp; linkedin.com/in/danawerpny</p>
+  </div>
+<div class="contact-right">
+  <?php echo do_shortcode('[contact-form-7 id="22" title="Contact form 1"]'); ?>
+</div>
   </div> <!-- .container -->
 </div> <!-- .contact -->
 

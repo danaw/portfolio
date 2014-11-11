@@ -39,16 +39,17 @@ get_header('static');  ?>
   </div> <!-- /.container -->
 </header><!--/.header-->
 
-<div class="about" id="about">
+<div class="about clearfix" id="about">
   <div class="container">
-
     <div class="overview-img">
       <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/dana.jpg" alt="Dana Werpny">
     </div> <!-- .overview -->
 
     <div class="overview">
-    <h3>From Design to Front-End Development</h3>
-      <p>I am a graphic designer turned front-end developer based in Toronto, Canada. As a designer, I strive to build websites that are both visually beautiful and user-friendly. As a developer, I believe that clean, semantic code matters just as much as the user interface design.</p>
+      <h3>From Design to Front-End Development</h3>
+      <p>I am a graphic designer turned front-end developer based in Toronto, Canada. As a designer, I strive to build websites that are both visually beautiful and user-friendly. As a developer, I believe that clean, semantic code matters just as much as good design.</p>
+      </div>
+      <div class="below">
       <h4>More Info...</h4>
       <ul>
         <li>I coded my first website (a personal site) when I was 11 years old.</li>
@@ -56,7 +57,7 @@ get_header('static');  ?>
         <li>I have a degree in Communication Studies from York University.</li>
         <li>I am a graduate of the Full-Time Front-End Development Immersive at HackerYou.</li>
       </ul>
-
+      </div> <!-- .below -->
     </div> <!-- .overview -->
 
   </div> <!-- .container -->
@@ -68,11 +69,11 @@ get_header('static');  ?>
      <div class="line"></div>
 
       <div class="portfolio-right">
-        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio1.png" alt="DapperBox">
+        <a href="http://danawerpny.com/dapperbox" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/portfolio1.png" alt="DapperBox"></a>
       </div> <!-- .portfolio-display -->
 
       <div class="portfolio-left">
-        <h3>DapperBox</h3>
+        <h3><a href="http://danawerpny.com/dapperbox" target="_blank">DapperBox</a></h3>
         <h4>A jQuery Photo Gallery for Photographers</h4>
         <p>DapperBox is a responsive photo gallery lightbox that allows for a large quanity of work to be displayed via multiple categories. This project was my first experience with pair programming.</p>
         <ul>
@@ -81,30 +82,32 @@ get_header('static');  ?>
           <li>Sass</li>
           <li>JavaScript</li>
           <li>jQuery</li>
+          <li>Responsive</li>
         </ul>
       </div> <!-- .portfolio-img -->
 
       <div class="portfolio-left">
-        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio2.png" alt="My Movie Star Baby">
+        <a href="http://danawerpny.com/moviestarbaby" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/portfolio2.png" alt="My Movie Star Baby"></a>
       </div> <!-- .portfolio-display -->
 
       <div class="portfolio-right">
-      <h3>My Movie Star Baby</h3>
+      <h3><a href="http://danawerpny.com/moviestarbaby" target="_blank">My Movie Star Baby</a></h3>
         <h4>A Hollywood Baby Name Generator</h4>
         <p>This project required API integration from The Movie Database. Some of the names that get generated can be downright ridiculous. Other names actually work really well. Try it out for yourself!</p>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>JavaScript</li>
+          <li>API</li>
         </ul>
       </div> <!-- .portfolio-img -->
 
-      <div class="portfolio-right">
-        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio3.png" alt="DapperBox">
+      <div class="portfolio-right-2">
+        <a href="http://danawerpny.com/turninggears" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/portfolio3.png" alt="Turning Gears"></a>
       </div> <!-- .portfolio-display -->
 
-      <div class="portfolio-left">
-        <h3>Turning Gears</h3>
+      <div class="portfolio-left-2">
+        <h3><a href="http://danawerpny.com/turninggears" target="_blank">Turning Gears</a></h3>
         <h4>A JQuery Plugin for Creating a Rotating Animation Effect</h4>
         <p>A small snippet of JQuery combined with the power of the rotating CSS3 animation effect. This plugin is effective in getting the message across that you are a hardworking person or agency whose gears are always turning.</p>
         <ul>
@@ -121,7 +124,7 @@ get_header('static');  ?>
   <div class="container">
     <!-- <h2>Skills</h2> -->
     <div class="skills-list">
-      <i class="fa fa-code fa-4x"></i>
+      <i class="fa fa-code fa-4x tossing"></i>
       <h2>Development</h2>
       <p>HTML5, CSS3, Sass</p>
       <p>Javascript Fundamentals, JQuery</p>
@@ -129,14 +132,14 @@ get_header('static');  ?>
       <p>WordPress, PHP</p>
     </div> <!-- .skills-list -->
     <div class="skills-list">
-      <i class="fa fa-paint-brush fa-4x"></i>
+      <i class="fa fa-paint-brush fa-4x tossing"></i>
       <h2>Design</h2>
       <p>Illustrator</p>
       <p>Photoshop</p>
       <p>InDesign</p>
     </div> <!-- .skills-list -->
     <div class="skills-list">
-      <i class="fa fa-cog fa-4x"></i>
+      <i class="fa fa-cog fa-4x spinning"></i>
       <h2>Workflow</h2>
       <p>Sublime Text 3</p>
       <p>Gulp</p>
@@ -144,9 +147,9 @@ get_header('static');  ?>
       <p>Cross-Browser Testing</p>
     </div> <!-- .skills-list -->
     <div class="skills-list">
-      <i class="fa fa-heart fa-4x"></i>
+      <i class="fa fa-heart fa-4x pulse"></i>
       <h2>Passion</h2>
-      <p>I enjoy building websites. There are so many technologies to learn and improve on, and I work everyday to hone my skills.</p>
+      <p>I enjoy building websites. There are so many technologies to learn and improve on, and I work everyday to refine my skills.</p>
     </div> <!-- .skills-list -->
   </div> <!-- .container -->
 </div> <!-- .skills -->
@@ -154,12 +157,14 @@ get_header('static');  ?>
 <div class="reading" id="blog">
   <div class="main">
     <div class="container">
+    <h1>Blog</h1>
+  <div class="line"></div>
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
-
+        <?php the_field(excerpt); ?>...
+        <a href="#">Continue Reading</a>
       <?php endwhile; // end the loop?>
     </div> <!-- /.main -->
   </div> <!-- /.container -->

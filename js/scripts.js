@@ -107,3 +107,10 @@ $(function(){
 
 $('header').stickies()
 
+
+	$('.fa-5x').click(function() {
+		$(this).addClass("slideUp");
+	});
+
+
+

@@ -726,7 +726,7 @@ pulse
 ==============================================
 */
 
-.pulse{
+.pulse:hover {
 	animation-name: pulse;
 	-webkit-animation-name: pulse;
 
@@ -814,7 +814,7 @@ tossing
 ==============================================
 */
 
-.tossing{
+.tossing:hover {
 	animation-name: tossing;
 	-webkit-animation-name: tossing;
 
@@ -827,25 +827,25 @@ tossing
 
 @keyframes tossing {
 	0% {
-		transform: rotate(-4deg);
+		transform: rotate(-8deg);
 	}
 	50% {
-		transform: rotate(4deg);
+		transform: rotate(8deg);
 	}
 	100% {
-		transform: rotate(-4deg);
+		transform: rotate(-8deg);
 	}
 }
 
 @-webkit-keyframes tossing {
 	0% {
-		-webkit-transform: rotate(-4deg);
+		-webkit-transform: rotate(-8deg);
 	}
 	50% {
-		-webkit-transform: rotate(4deg);
+		-webkit-transform: rotate(8deg);
 	}
 	100% {
-		-webkit-transform: rotate(-4deg);
+		-webkit-transform: rotate(-8deg);
 	}
 }
 

@@ -1,7 +1,8 @@
 header {
 	position: relative;
-  position: fixed;
+  // position: fixed;
 	background: #FFF;
+	box-shadow: 0 3px 1px #EEE;
 	width: 100%;
 	height: 60px;
 	z-index: 999;
@@ -16,7 +17,7 @@ header {
 		width: 90px;
 		padding-top: 20px;
     background: none;
-    color: #888;
+    color: #999;
     font-size: 16px;
 	  height: 60px;
 	  text-align: center;
@@ -27,29 +28,30 @@ header {
     -o-transition: all linear 200ms;
     transition: all linear 200ms;
     position: relative;
+    font-weight: 400;
 	  &:hover {
 	  	// background: #FFF;
-	  	color: #FFF;
-	  	&:after {
-	  		top:0;
-	  	}
+	  	color: #666;
+	  	// &:after {
+	  	// 	top:0;
+	  	// }
 	  }
-	  &:after {
-	  	-webkit-transition: all linear 200ms;
-      -moz-transition: all linear 200ms;
-      -o-transition: all linear 200ms;
-      transition: all linear 200ms;
-			content : '';
-			display: block;
-			background: #43B6CD;
-			position: absolute;
-			width: 100px;
-			top: 100%;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			z-index: -1;
-	  }
+	  // &:after {
+	  // 	-webkit-transition: all linear 200ms;
+   //    -moz-transition: all linear 200ms;
+   //    -o-transition: all linear 200ms;
+   //    transition: all linear 200ms;
+			// content : '';
+			// display: block;
+			// background: #43B6CD;
+			// position: absolute;
+			// width: 100px;
+			// top: 100%;
+			// bottom: 0;
+			// right: 0;
+			// left: 0;
+			// z-index: -1;
+	  // }
 	}
 }
 
@@ -71,6 +73,7 @@ ul.menu {
 
 .logo {
 	padding-top: 20px;
+	padding-left: 45px;
 	img {
 		width: 150px;
 		height: 22px;

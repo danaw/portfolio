@@ -1,8 +1,3 @@
-$(function(){
-	//your jQuery here
-
-});
-
 (function($) {
     function Sticker(element) {
 	var $sticky = $(element);
@@ -106,4 +101,3 @@ $(function(){
 })(jQuery);
 
 $('header').stickies()
-

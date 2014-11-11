@@ -4,20 +4,40 @@
 	Template Name: Static Front Page
 */
 
-get_header();  ?>
+get_header('static');  ?>
 
 <div class="hero">
 <div class="container-hero vertical-centering">
-  <h1>Hi, I'm Dana</h1>
-  <h2>I'm a Front-End Developer with a background in Graphic Design and Communication Studies</h2>
-  <a href="#portfolio"><button class="action">View My Portfolio</button></a>
-  <a href=""><button class="action">Download My CV</button></a>
-  <a href="#contact"><button class="action">Contact Me</button></a>
+  <h1>Hi, I'm Dana.</h1>
+  <h2>I'm a Front-End Developer with a background in Graphic Design and Communication Studies.</h2>
+
   <div class="scroll-indicator">
     <a href="#about"><i class="fa fa-angle-down fa-5x"></i></a>
   </div> <!-- .scroll-indicator -->
 </div> <!-- .container -->
 </div> <!-- .hero -->
+
+<header>
+  <div class="logo">
+    <div class="container">
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+        <?php echo wp_get_attachment_link( 34, small ); ?>
+        </a>
+    </div> <!-- .logo -->
+
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_locations' => 'primary'
+    )); ?>
+
+    <!-- <div class="social">
+     <i class="fa fa-twitter"></i>
+     <i class="fa fa-github"></i>
+     <i class="fa fa-linkedin"></i>
+    </div> -->
+
+  </div> <!-- /.container -->
+</header><!--/.header-->
 
 <div class="about" id="about">
   <div class="container">
@@ -27,8 +47,16 @@ get_header();  ?>
     </div> <!-- .overview -->
 
     <div class="overview">
-      <h3>General Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam animi, recusandae inventore aliquam fugiat neque commodi autem mollitia officia, nemo dolorem, sit quas iure magni sint sed alias  dignissimos. Excepturi.</p>
+    <h3>From Design to Front-End Development</h3>
+      <p>I am a graphic designer turned front-end developer based in Toronto, Canada. As a designer, I strive to build websites that are both visually beautiful and user-friendly. As a developer, I believe that clean, semantic code matters just as much as the user interface design.</p>
+      <h4>More Info...</h4>
+      <ul>
+        <li>I coded my first website (a personal site) when I was 11 years old.</li>
+        <li>I taught myself HTML, CSS, Photoshop, WordPress, InDesign, and Illustrator (in that order).</li>
+        <li>I have a degree in Communication Studies from York University.</li>
+        <li>I am a graduate of the Full-Time Front-End Development Immersive at HackerYou.</li>
+      </ul>
+
     </div> <!-- .overview -->
 
   </div> <!-- .container -->
@@ -36,22 +64,54 @@ get_header();  ?>
 
 <div class="portfolio clearfix" id="portfolio">
   <div class="container">
-    <h2>Portfolio</h2>
+    <h2>Featured Work</h2>
      <div class="line"></div>
+
       <div class="portfolio-right">
-        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio4.jpg" alt="Dana Werpny">
+        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio1.png" alt="DapperBox">
       </div> <!-- .portfolio-display -->
 
       <div class="portfolio-left">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam odit velit dolore obcaecati cupiditate quaerat ab inventore dolores maiores, voluptas, voluptates enim, harum nemo ipsa repudiandae a temporibus quis tempore.</p>
+        <h3>DapperBox</h3>
+        <h4>A jQuery Photo Gallery for Photographers</h4>
+        <p>DapperBox is a responsive photo gallery lightbox that allows for a large quanity of work to be displayed via multiple categories. This project was my first experience with pair programming.</p>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Sass</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+        </ul>
       </div> <!-- .portfolio-img -->
 
       <div class="portfolio-left">
-        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio4.jpg" alt="Dana Werpny">
+        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio2.png" alt="My Movie Star Baby">
       </div> <!-- .portfolio-display -->
 
       <div class="portfolio-right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam odit velit dolore obcaecati cupiditate quaerat ab inventore dolores maiores, voluptas, voluptates enim, harum nemo ipsa repudiandae a temporibus quis tempore.</p>
+      <h3>My Movie Star Baby</h3>
+        <h4>A Hollywood Baby Name Generator</h4>
+        <p>This project required API integration from The Movie Database. Some of the names that get generated can be downright ridiculous. Other names actually work really well. Try it out for yourself!</p>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+      </div> <!-- .portfolio-img -->
+
+      <div class="portfolio-right">
+        <img class="circle" src="<?php bloginfo('template_directory'); ?>/img/portfolio3.png" alt="DapperBox">
+      </div> <!-- .portfolio-display -->
+
+      <div class="portfolio-left">
+        <h3>Turning Gears</h3>
+        <h4>A JQuery Plugin for Creating a Rotating Animation Effect</h4>
+        <p>A small snippet of JQuery combined with the power of the rotating CSS3 animation effect. This plugin is effective in getting the message across that you are a hardworking person or agency whose gears are always turning.</p>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>jQuery</li>
+        </ul>
       </div> <!-- .portfolio-img -->
 
   </div> <!-- .container -->
@@ -86,7 +146,7 @@ get_header();  ?>
     <div class="skills-list">
       <i class="fa fa-heart fa-4x"></i>
       <h2>Passion</h2>
-      <p>I enjoy building electronic landscapes. I am always working towards proficiency - learning to be better than I was the day before.</p>
+      <p>I enjoy building websites. There are so many technologies to learn and improve on, and I work everyday to hone my skills.</p>
     </div> <!-- .skills-list -->
   </div> <!-- .container -->
 </div> <!-- .skills -->
@@ -111,10 +171,10 @@ get_header();  ?>
   <div class="line"></div>
   <div class="contact-left">
     <h2>Connect with me on social media.</h2>
-    <p><i class="fa fa-envelope fa-2x"></i> &nbsp; hello@danawerpny.com</p>
-    <p><i class="fa fa-twitter fa-2x"></i> &nbsp; @danawerpny</p>
-    <p><i class="fa fa-github fa-2x"></i> &nbsp; github.com/danaw</p>
-    <p><i class="fa fa-linkedin fa-2x"></i> &nbsp; linkedin.com/in/danawerpny</p>
+    <p><a href="mailto:hello@danawerpny.com"><i class="fa fa-envelope fa-2x"></i> &nbsp; hello@danawerpny.com</a></p>
+    <p><a href="http://twitter.com/danawerpny"><i class="fa fa-twitter fa-2x"></i> &nbsp; @danawerpny</p>
+    <p><a href="http://github.com/danaw"><i class="fa fa-github fa-2x"></i> &nbsp; github.com/danaw</a></p>
+    <p><a href="http://ca.linkedin.com/in/danawerpny"><i class="fa fa-linkedin fa-2x"></i> &nbsp; linkedin.com/in/danawerpny</a></p>
   </div>
 <div class="contact-right">
   <?php echo do_shortcode('[contact-form-7 id="22" title="Contact form 1"]'); ?>

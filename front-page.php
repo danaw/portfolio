@@ -84,6 +84,10 @@ get_header('static');  ?>
           <li>jQuery</li>
           <li>Responsive</li>
         </ul>
+        <p class="space">
+          <a href="#"><button class="action">Live Demo</button></a>
+          <a href="#"><button class="action">More Info</button></a>
+        </p>
       </div> <!-- .portfolio-img -->
 
       <div class="portfolio-left">
@@ -100,6 +104,10 @@ get_header('static');  ?>
           <li>JavaScript</li>
           <li>API</li>
         </ul>
+        <p class="space">
+          <a href="#"><button class="action">Live Demo</button></a>
+          <a href="#"><button class="action">More Info</button></a>
+        </p>
       </div> <!-- .portfolio-img -->
 
       <div class="portfolio-right-2">
@@ -115,6 +123,10 @@ get_header('static');  ?>
           <li>CSS3</li>
           <li>jQuery</li>
         </ul>
+        <p class="space">
+          <a href="#"><button class="action">Live Demo</button></a>
+          <a href="#"><button class="action">More Info</button></a>
+        </p>
       </div> <!-- .portfolio-img -->
 
   </div> <!-- .container -->

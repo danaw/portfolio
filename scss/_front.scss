@@ -110,6 +110,21 @@
 .portfolio {
   background: #FFF;
   padding: 50px;
+  ul {
+  	display: inline;
+  	padding-left: 0;
+  }
+  ul li {
+  	display: inline;
+  	list-style-type: none;
+  	margin-right: 2px;
+  	width: 100px;
+  	color: #8A87A3;
+  	font-size: 0.8em;
+  	border: 1px solid #8A87A3;
+  	border-radius: 5px;
+  	padding: 5px;
+  }
   h2 {
   	color: #43B6CD;
   	font-size: 1.3em;

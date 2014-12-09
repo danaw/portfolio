@@ -11,35 +11,27 @@ Author URI: http://danawerpny.com
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic);
 
-@import "_mq.scss";
+/* HY STARTER THEME STYLES */
+@import "_hytheme.scss";
 
+
+/* ANIMATIONS */
 @import "_animations.scss";
-
-@import "_type.scss";
 
 /* NAV */
 @import "_nav.scss";
 
 /* BASE STYLES */
-
 @import "_base.scss";
 
-/* HY STARTER THEME STYLES */
-
-@import "_hytheme.scss";
-
 /* FRONT PAGE STYLES */
-
 @import "_front.scss";
 
 /* SINGLE PORTFOLIO STYLES */
-
 @import "_portfolio.scss";
 
 /* SINGLE BLOG STYLE */
-
 @import "_blog.scss";
 
 /* CONTACT PAGE STYLE */
-
 @import "_contact.scss";
